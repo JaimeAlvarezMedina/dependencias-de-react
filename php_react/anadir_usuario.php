@@ -20,7 +20,7 @@
             }
 
             if($encontrado==false){
-                $consulta = ("INSERT INTO usuarios (Usuario, Contra) VALUES ('$usuario','$contra')");/* Hacemos la consulta */
+                $consulta = ("INSERT INTO usuarios (Usuario, Contra, Fondo) VALUES ('$usuario','$contra', 'white')");/* Hacemos la consulta */
                 $conexion->query($consulta);/* La ejecutamos */
                 echo json_encode("Disponible");
             }
